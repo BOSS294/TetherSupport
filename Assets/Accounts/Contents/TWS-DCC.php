@@ -11,7 +11,7 @@
             width: 80%;
             margin-left: 5%;
             max-width: 1300px;
-            padding: 20px;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
