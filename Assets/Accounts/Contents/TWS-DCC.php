@@ -134,7 +134,7 @@
 
         </div>
 
-        <div class="control-card">
+        <div class="control-card" >
             <span class="material-icons control-card-icon">info</span>
             
             <div class="control-card-title">Web Info</div>
@@ -145,3 +145,11 @@
       
     </div>
 </div>
+<script>
+    function redirectToUrl(url) { 
+        /*
+        CREATE FUNCTION CODE HERE
+        THIS WILL BE DYNAMIC IN NATURE ON CLICK OF CARD THIS WILL REDIRECT
+        USER TO THE URL MENTIONED.         */
+    }
+</script>
