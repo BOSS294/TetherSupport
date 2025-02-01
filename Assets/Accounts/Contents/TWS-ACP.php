@@ -175,17 +175,17 @@
     });
 
     function authenticateUser(email, password) {
-        const simulatedResponse = {
-            success: true,  
-            message: 'Login successful!'
-        };
+    const simulatedResponse = (email === 'demo@gmail.com' && password === 'demo@1234') 
+        ? { success: true, message: 'Login successful!' } 
+        : { success: false, message: 'Invalid credentials. Please try again.' };
 
-        if (simulatedResponse.success) {
-            showToast(simulatedResponse.message, 'success');
-            window.location.href = 'dashboard.php';
-        } else {
-            showToast(simulatedResponse.message || 'Invalid credentials. Please try again.', 'error');
-        }
+    if (simulatedResponse.success) {
+        showToast(simulatedResponse.message, 'success');
+        window.location.href = 'dashboard.php';
+    } else {
+        showToast(simulatedResponse.message, 'error');
     }
+}
 
 </script>
+ 
